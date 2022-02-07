@@ -1,9 +1,9 @@
 class Nimbus < Formula
   desc "Nimbus Client"
   homepage "https://usenimbus.com/"
-  url "https://github.com/usenimbus/homebrew-nimbus/releases/download/v0.0.2/nimbus-macos-x64.tar.gz"
-  sha256 "4ff0bc3febc8f972ad0aeedb03daa080afac229a21d576c5e6523c718926aab4"
-  version "0.0.2"
+  url "https://github.com/usenimbus/homebrew-nimbus/releases/download/v0.1.0/nimbus-macos-x64.tar.gz"
+  sha256 "89a622e2208ae762a281f9e8e05c61463e7554bd4a4912853b00b5df76a5de7d"
+  version "0.1.0"
   def install
     bin.install "nimbus"
   end
