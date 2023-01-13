@@ -1,3 +1,7 @@
+require "formula"
+require "language/go"
+require 'erb'
+
 class Nimbus < Formula
   desc "Nimbus Client"
   homepage "https://usenimbus.com/"
@@ -7,4 +11,9 @@ class Nimbus < Formula
   def install
     bin.install buildpath/"nimbus"
   end
+  
+  test do
+    system "#{bin}/nimbus version"
+  end
+
 end
