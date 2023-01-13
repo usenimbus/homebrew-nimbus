@@ -5,6 +5,6 @@ class Nimbus < Formula
   sha256 "44aba612de3a38c3c525abb194d7a13ed1c5cb0acd1021395d0814f39382d60b"
   version "1.0.0"
   def install
-    bin.install "nimbus-amd64"
+    bin.install buildpath/"nimbus"
   end
 end
