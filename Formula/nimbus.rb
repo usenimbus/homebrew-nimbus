@@ -10,7 +10,7 @@ class Nimbus < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/usenimbus/homebrew-nimbus/releases/download/v1.0.3/nimbus-1.0.3-darwin-arm64.tar.gz"
-    sha256 "3e781b6a0b0c91a38d7ae36ca4d9a8e3f4ba94b7a5964c742ff2aae09a5f821a"
+    sha256 "ab31e04a9248fecc54afee3a363ea1dc7863aebf39ceac5dab2d4f74c056928f"
 
     def install
       bin.install buildpath/"nimbus"
@@ -19,7 +19,7 @@ class Nimbus < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/usenimbus/homebrew-nimbus/releases/download/v1.0.3/nimbus-1.0.3-darwin-amd64.tar.gz"
-    sha256 "415c4fc4859f8cacc1d1be2d82052427ae4befe8779a6aace9fb6325a4ba9a32"
+    sha256 "b8cd7ad17105efd3ee60f61a9dd224e74d63932cd435fe5e31afebd25cf8400d"
   
     def install
       bin.install buildpath/"nimbus"
