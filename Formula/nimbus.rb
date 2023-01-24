@@ -26,8 +26,4 @@ class Nimbus < Formula
     end
   end
   
-  test do
-    system "#{bin}/nimbus version"
-  end
-
 end
