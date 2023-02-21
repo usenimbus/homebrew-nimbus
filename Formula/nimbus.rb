@@ -5,12 +5,12 @@ require 'erb'
 class Nimbus < Formula
   desc "Nimbus Client"
   homepage "https://usenimbus.com/"
-  version "1.0.8"
+  version "1.0.9"
 
 
   if Hardware::CPU.arm?
-    url "https://github.com/usenimbus/homebrew-nimbus/releases/download/v1.0.8/nimbus-1.0.8-darwin-arm64.tar.gz"
-    sha256 "3524005efb52cd868752195b09158a3c00ab5d19bd4f444a509be2e0cc8779e5"
+    url "https://d1sn0nbc82p4fc.cloudfront.net/nimbus-cli/cli_v1.0.9/nimbus-1.0.9-darwin-arm64.tar.gz"
+    sha256 "9fa0ae2c782643bcaa6623cb92615fefd4b2ddfd3be7a701e731089ed728453e"
 
     def install
       bin.install buildpath/"nimbus"
@@ -18,8 +18,8 @@ class Nimbus < Formula
   end
 
   if Hardware::CPU.intel?
-    url "https://github.com/usenimbus/homebrew-nimbus/releases/download/v1.0.8/nimbus-1.0.8-darwin-amd64.tar.gz"
-    sha256 "7451b2e7e13e92731ce3627cfb15dd9f7fea796dbeaa9d913c3ec945f32b57e3"
+    url "https://d1sn0nbc82p4fc.cloudfront.net/nimbus-cli/cli_v1.0.9/nimbus-1.0.9-darwin-amd64.tar.gz"
+    sha256 "2678f0d837d1db86307f89c6e4ed18092d26bfcbd5040b0b827047919946d455"
   
     def install
       bin.install buildpath/"nimbus"
